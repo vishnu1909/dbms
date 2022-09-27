@@ -1,0 +1,21 @@
+CREATE TABLE bankew
+(
+  s_no int(5),
+  cust_name char(50),
+  acc_no int(11),
+  balance int(10),
+  cust_branch text);
+  INSERT INTO bankew
+  (s_no,cust_name,acc_no,balance,cust_branch)
+  VALUES ('1','jaggu','111222333','10000','nellore');
+  SELECT *FROM bankew;
+  INSERT INTO bankew
+  VALUES ('2','JAANU','222333444','20000','nellore');
+  INSERT INTO bankew
+  VALUES ('3','chinnu','444666777','30000','pondi');
+  INSERT INTO bankew
+  VALUES ('4','kutlu','777766667','89999','vizag');
+  SELECT * FROM bankew;
+  UPDATE bankew
+  SET cust_branch='vizag'
+  WHERE acc_no=444666777;
