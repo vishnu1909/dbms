@@ -1,0 +1,23 @@
+CREATE TABLE BANKu
+(
+  s_no int(5),
+  customer_name char(20),
+  acc_num int(11),
+  balance int(10),
+  customer_branch char(50));
+  INSERT INTO BANKu
+  (s_no,customer_name,acc_num,balance,customer_branch)
+  VALUES('1 ', 'Vishnu', '192110556', '10000', 'srinagar');
+  SELECT * FROM BANKu;
+  INSERT INTO BANKu
+  VALUES('2 ', 'puppy', '19211008' ,'20000', 'nellore');
+  INSERT INTO BANKu
+  VALUES('3 ', 'jaanu', '10010010' ,'30000', 'nellore');
+  INSERT INTO BANKu
+  VALUES('4', 'kutlu', '200200200', '40000', 'nellore');
+  INSERT INTO BANKu
+  VALUES('5', 'guddi', '300300300', '50000', 'hyderabad');
+  SELECT * FROM BANKu;
+  UPDATE BANKu
+  SET customer_branch='pondicherry'
+  WHERE acc_num=19211008;
